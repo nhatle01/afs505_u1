@@ -1,0 +1,490 @@
+Nhat Le
+011528748
+HW #1
+Paths, Folders, Directories (pwd)
+
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+
+Make a Directory (mkdir)
+
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ mkdir temp
+(base) wless-user-172019181069:~ NhatLe$ mkdir temp/stuff
+(base) wless-user-172019181069:~ NhatLe$ mkdir temp/stuff/things
+(base) wless-user-172019181069:~ NhatLe$ mkdir -p temp/stuff/things/orange/apple/pear/grape
+(base) wless-user-172019181069:~ NhatLe$ mkdir -p temp/1/2/3/4/5/6/7/8/9/10
+(base) wless-user-172019181069:~ NhatLe$ mkdir temp/"I Have Fun"
+
+Change Directory (cd)
+
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ cd stuff
+(base) wless-user-172019181069:stuff NhatLe$ pwd
+/Users/NhatLe/temp/stuff
+(base) wless-user-172019181069:stuff NhatLe$ cd things
+(base) wless-user-172019181069:things NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things
+(base) wless-user-172019181069:things NhatLe$ cd orange/
+(base) wless-user-172019181069:orange NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange
+(base) wless-user-172019181069:orange NhatLe$ cd apple/
+(base) wless-user-172019181069:apple NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange/apple
+(base) wless-user-172019181069:apple NhatLe$ cd pear/
+(base) wless-user-172019181069:pear NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange/apple/pear
+(base) wless-user-172019181069:pear NhatLe$ cd grape/
+(base) wless-user-172019181069:grape NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange/apple/pear/grape
+(base) wless-user-172019181069:grape NhatLe$ cd ..
+(base) wless-user-172019181069:pear NhatLe$ cd ..
+(base) wless-user-172019181069:apple NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange/apple
+(base) wless-user-172019181069:apple NhatLe$ cd ..
+(base) wless-user-172019181069:orange NhatLe$ cd ..
+(base) wless-user-172019181069:things NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things
+(base) wless-user-172019181069:things NhatLe$ cd ../../..
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ cd temp/stuff/things/orange/apple/pear/grape
+(base) wless-user-172019181069:grape NhatLe$ pwd
+/Users/NhatLe/temp/stuff/things/orange/apple/pear/grape
+(base) wless-user-172019181069:grape NhatLe$ cd ../../../../../../../
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ cd temp/stuff/things/orange/apple
+(base) wless-user-172019181069:apple NhatLe$ cd ../../../../
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd documents
+(base) wless-user-172019181069:documents NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd downloads
+(base) wless-user-172019181069:downloads NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd music/itunes
+(base) wless-user-172019181069:itunes NhatLe$ cd ~
+
+List Directory (ls)
+
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun	stuff
+(base) wless-user-172019181069:temp NhatLe$ cd stuff
+(base) wless-user-172019181069:stuff NhatLe$ ls
+things
+(base) wless-user-172019181069:stuff NhatLe$ cd things
+(base) wless-user-172019181069:things NhatLe$ ls
+orange
+(base) wless-user-172019181069:things NhatLe$ cd orange
+(base) wless-user-172019181069:orange NhatLe$ ls
+apple
+(base) wless-user-172019181069:orange NhatLe$ cd apple
+(base) wless-user-172019181069:apple NhatLe$ ls
+pear
+(base) wless-user-172019181069:apple NhatLe$ cd pear
+(base) wless-user-172019181069:pear NhatLe$ ls
+grape
+(base) wless-user-172019181069:pear NhatLe$ cd grape
+(base) wless-user-172019181069:grape NhatLe$ ls
+(base) wless-user-172019181069:grape NhatLe$ cd ..
+(base) wless-user-172019181069:pear NhatLe$ ls
+grape
+(base) wless-user-172019181069:pear NhatLe$ cd ../../../
+(base) wless-user-172019181069:things NhatLe$ ls
+orange
+(base) wless-user-172019181069:things NhatLe$ cd ../../
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun	stuff
+(base) wless-user-172019181069:temp NhatLe$ cd music
+-bash: cd: music: No such file or directory
+(base) wless-user-172019181069:temp NhatLe$ cd ..
+(base) wless-user-172019181069:~ NhatLe$ cd music
+(base) wless-user-172019181069:music NhatLe$ ls
+Audio Music Apps	Music
+GarageBand		iTunes
+
+Remove Directory (rmdir)
+
+(base) wless-user-172019181069:music NhatLe$ cd ..
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun	stuff
+(base) wless-user-172019181069:temp NhatLe$ cd stuff/things/orange/apple/pear/grape
+(base) wless-user-172019181069:grape NhatLe$ cd ..
+(base) wless-user-172019181069:pear NhatLe$ rmdir grape
+(base) wless-user-172019181069:pear NhatLe$ cd ..
+(base) wless-user-172019181069:apple NhatLe$ rmdir pear
+(base) wless-user-172019181069:apple NhatLe$ cd ..
+(base) wless-user-172019181069:orange NhatLe$ ls
+apple
+(base) wless-user-172019181069:orange NhatLe$ rmdir apple
+(base) wless-user-172019181069:orange NhatLe$ cd ..
+(base) wless-user-172019181069:things NhatLe$ ls
+orange
+(base) wless-user-172019181069:things NhatLe$ rmdir orange
+(base) wless-user-172019181069:things NhatLe$ cd ..
+(base) wless-user-172019181069:stuff NhatLe$ ls
+things
+(base) wless-user-172019181069:stuff NhatLe$ rmdir things
+(base) wless-user-172019181069:stuff NhatLe$ ls
+(base) wless-user-172019181069:stuff NhatLe$ cd ..
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun	stuff
+(base) wless-user-172019181069:temp NhatLe$ rmdir stuff
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ mkdir dog
+(base) wless-user-172019181069:temp NhatLe$ mkdir dog/cat
+(base) wless-user-172019181069:temp NhatLe$ cd ..
+(base) wless-user-172019181069:~ NhatLe$ cd temp/dog
+(base) wless-user-172019181069:dog NhatLe$ ls
+cat
+(base) wless-user-172019181069:dog NhatLe$ rmdir cat
+(base) wless-user-172019181069:dog NhatLe$ cd ..
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun	dog
+(base) wless-user-172019181069:temp NhatLe$ rmdir dog
+(base) wless-user-172019181069:temp NhatLe$ ls
+1		I Have Fun
+(base) wless-user-172019181069:temp NhatLe$ cd 1
+(base) wless-user-172019181069:1 NhatLe$ ls
+2
+(base) wless-user-172019181069:1 NhatLe$ pwd
+/Users/NhatLe/temp/1
+(base) wless-user-172019181069:1 NhatLe$ cd 2/3/4/5/6/7/8/9/10
+(base) wless-user-172019181069:10 NhatLe$ cd ..
+(base) wless-user-172019181069:9 NhatLe$ ls
+10
+(base) wless-user-172019181069:9 NhatLe$ rmdir 10
+(base) wless-user-172019181069:9 NhatLe$ cd ..
+(base) wless-user-172019181069:8 NhatLe$ rmdir 9
+(base) wless-user-172019181069:8 NhatLe$ cd ..
+(base) wless-user-172019181069:7 NhatLe$ rmdir 8
+(base) wless-user-172019181069:7 NhatLe$ cd ..
+(base) wless-user-172019181069:6 NhatLe$ rmdir 7
+(base) wless-user-172019181069:6 NhatLe$ cd ..
+(base) wless-user-172019181069:5 NhatLe$ rmdir 6
+(base) wless-user-172019181069:5 NhatLe$ cd ..
+(base) wless-user-172019181069:4 NhatLe$ rmdir 5
+(base) wless-user-172019181069:4 NhatLe$ cd ..
+(base) wless-user-172019181069:3 NhatLe$ rmdir 4
+(base) wless-user-172019181069:3 NhatLe$ cd ..
+(base) wless-user-172019181069:2 NhatLe$ rmdir 3
+(base) wless-user-172019181069:2 NhatLe$ cd ..
+(base) wless-user-172019181069:1 NhatLe$ rmdir 2
+(base) wless-user-172019181069:1 NhatLe$ cd ..
+(base) wless-user-172019181069:temp NhatLe$ rmdir 1
+(base) wless-user-172019181069:temp NhatLe$ cd ..
+(base) wless-user-172019181069:~ NhatLe$ ls
+Applications		Library			Pictures
+Desktop			Movies			Public
+Documents		Music			opt
+Downloads		Nat2005.LimGeo.zip.exe	temp
+I Have Fun		Nat2006.LimGeo.zip.exe
+
+Moving Around (pushd, popd)
+
+(base) wless-user-172019181069:~ NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ mkdir -p i/like/icecream
+(base) wless-user-172019181069:temp NhatLe$ pushd i/like/icecream
+~/temp/i/like/icecream ~/temp
+(base) wless-user-172019181069:icecream NhatLe$ popd
+~/temp
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd i/like
+~/temp/i/like ~/temp
+(base) wless-user-172019181069:like NhatLe$ pwd
+/Users/NhatLe/temp/i/like
+(base) wless-user-172019181069:like NhatLe$ pushd icecream
+~/temp/i/like/icecream ~/temp/i/like ~/temp
+(base) wless-user-172019181069:icecream NhatLe$ pwd
+/Users/NhatLe/temp/i/like/icecream
+(base) wless-user-172019181069:icecream NhatLe$ popd
+~/temp/i/like ~/temp
+(base) wless-user-172019181069:like NhatLe$ pwd
+/Users/NhatLe/temp/i/like
+(base) wless-user-172019181069:like NhatLe$ popd
+~/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd i/like/icecream
+~/temp/i/like/icecream ~/temp
+(base) wless-user-172019181069:icecream NhatLe$ pushd
+~/temp ~/temp/i/like/icecream
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd
+~/temp/i/like/icecream ~/temp
+(base) wless-user-172019181069:icecream NhatLe$ pwd
+/Users/NhatLe/temp/i/like/icecream
+(base) wless-user-172019181069:icecream NhatLe$ cd ../../../
+(base) wless-user-172019181069:temp NhatLe$ mkdir -p it/is/snowing
+(base) wless-user-172019181069:temp NhatLe$ pushd it/is/snowing
+~/temp/it/is/snowing ~/temp ~/temp
+(base) wless-user-172019181069:snowing NhatLe$ pwd
+/Users/NhatLe/temp/it/is/snowing
+(base) wless-user-172019181069:snowing NhatLe$ popd
+~/temp ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd it/is
+~/temp/it/is ~/temp ~/temp
+(base) wless-user-172019181069:is NhatLe$ pwd
+/Users/NhatLe/temp/it/is
+(base) wless-user-172019181069:is NhatLe$ popd
+~/temp ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd it/is/snowing
+~/temp/it/is/snowing ~/temp ~/temp
+(base) wless-user-172019181069:snowing NhatLe$ pushd
+~/temp ~/temp/it/is/snowing ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd
+~/temp/it/is/snowing ~/temp ~/temp
+(base) wless-user-172019181069:snowing NhatLe$ pwd
+/Users/NhatLe/temp/it/is/snowing
+(base) wless-user-172019181069:snowing NhatLe$ popd
+~/temp ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd it
+~/temp/it ~/temp ~/temp
+(base) wless-user-172019181069:it NhatLe$ pushd is/snowing
+~/temp/it/is/snowing ~/temp/it ~/temp ~/temp
+(base) wless-user-172019181069:snowing NhatLe$ pushd
+~/temp/it ~/temp/it/is/snowing ~/temp ~/temp
+(base) wless-user-172019181069:it NhatLe$ pwd
+/Users/NhatLe/temp/it
+(base) wless-user-172019181069:it NhatLe$ pushd
+~/temp/it/is/snowing ~/temp/it ~/temp ~/temp
+(base) wless-user-172019181069:snowing NhatLe$ pwd
+/Users/NhatLe/temp/it/is/snowing
+(base) wless-user-172019181069:snowing NhatLe$ popd
+~/temp/it ~/temp ~/temp
+(base) wless-user-172019181069:it NhatLe$ pwd
+/Users/NhatLe/temp/it
+(base) wless-user-172019181069:it NhatLe$ pushd
+~/temp ~/temp/it ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ pushd
+~/temp/it ~/temp ~/temp
+(base) wless-user-172019181069:it NhatLe$ pwd
+/Users/NhatLe/temp/it
+(base) wless-user-172019181069:it NhatLe$ pushd
+~/temp ~/temp/it ~/temp
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+
+Making Empty Files (Touch, New-Item)
+
+(base) wless-user-172019181069:temp NhatLe$ cd ..
+(base) wless-user-172019181069:~ NhatLe$ touch iamcool.txt
+(base) wless-user-172019181069:~ NhatLe$ ls
+Applications		Library			Pictures
+Desktop			Movies			Public
+Documents		Music			iamcool.txt
+Downloads		Nat2005.LimGeo.zip.exe	opt
+I Have Fun		Nat2006.LimGeo.zip.exe	temp
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ mkdir file
+(base) wless-user-172019181069:temp NhatLe$ cd file
+(base) wless-user-172019181069:file NhatLe$ touch nhat.txt
+(base) wless-user-172019181069:file NhatLe$ cd ../../
+(base) wless-user-172019181069:~ NhatLe$ pwd
+/Users/NhatLe
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ touch iamcool.txt
+
+Copy a File (cp)
+
+(base) wless-user-172019181069:temp NhatLe$ cp iamcool.txt neat.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun	i		it
+file		iamcool.txt	neat.txt
+(base) wless-user-172019181069:temp NhatLe$ cp neat.txt awesome.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun	file		iamcool.txt	neat.txt
+awesome.txt	i		it
+(base) wless-user-172019181069:temp NhatLe$ cp awesome.txt thefourthfile.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		i			neat.txt
+awesome.txt		iamcool.txt		thefourthfile.txt
+file			it
+(base) wless-user-172019181069:temp NhatLe$ mkdir something
+(base) wless-user-172019181069:temp NhatLe$ cp awesome.txt something/
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		i			neat.txt
+awesome.txt		iamcool.txt		something
+file			it			thefourthfile.txt
+(base) wless-user-172019181069:temp NhatLe$ ls something/
+awesome.txt
+(base) wless-user-172019181069:temp NhatLe$ cp -r something newplace
+(base) wless-user-172019181069:temp NhatLe$ ls newplace/
+awesome.txt
+(base) wless-user-172019181069:temp NhatLe$ cp -r file newfile/
+(base) wless-user-172019181069:temp NhatLe$ ls newfile/
+nhat.txt
+
+Moving a File (mv)
+
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ mv awesome.txt uncool.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		it			something
+file			neat.txt		thefourthfile.txt
+i			newfile			uncool.txt
+iamcool.txt		newplace
+(base) wless-user-172019181069:temp NhatLe$ mv newplace oldplace
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		it			something
+file			neat.txt		thefourthfile.txt
+i			newfile			uncool.txt
+iamcool.txt		oldplace
+(base) wless-user-172019181069:temp NhatLe$ mv oldplace newplace
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		it			something
+file			neat.txt		thefourthfile.txt
+i			newfile			uncool.txt
+iamcool.txt		newplace
+(base) wless-user-172019181069:temp NhatLe$ mv neat.txt newplace
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		it			thefourthfile.txt
+file			newfile			uncool.txt
+i			newplace
+iamcool.txt		something
+(base) wless-user-172019181069:temp NhatLe$ mv newplace neat.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun		it			thefourthfile.txt
+file			neat.txt		uncool.txt
+i			newfile
+iamcool.txt		something
+(base) wless-user-172019181069:temp NhatLe$ mv neat.txt newplace
+(base) wless-user-172019181069:temp NhatLe$ pwd
+/Users/NhatLe/temp
+(base) wless-user-172019181069:temp NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd desktop
+(base) wless-user-172019181069:desktop NhatLe$ pwd
+/Users/NhatLe/desktop
+(base) wless-user-172019181069:desktop NhatLe$ mv temp test.txt
+(base) wless-user-172019181069:desktop NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ mv /Users/NhatLe/desktop/test.txt /Users/NhatLe/temp/
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+
+View a File (less, MORE)
+
+(base) wless-user-172019181069:temp NhatLe$ less test.txt
+(base) wless-user-172019181069:temp NhatLe$ less test.txt
+(base) wless-user-172019181069:temp NhatLe$ less iamcool.tou
+(base) wless-user-172019181069:temp NhatLe$ less test2.txt
+
+Stream a File (cat)
+
+(base) wless-user-172019181069:temp NhatLe$ cat test2.txt
+that make babies cry.(base) wless-user-172019181069:temp NhatLe$ cat test.txt
+I love Pullman
+I love Pullman
+I love Pullman
+I love Pullman
+I love Pullman
+I love Pullman
+I love Pullman
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Removing a File (rm)
+
+(base) wless-user-172019181069:temp NhatLe$ cd ~
+(base) wless-user-172019181069:~ NhatLe$ cd temp
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun	i		it		newplace	test.txt
+file		iamcool.txt	newfile		something	test2.txt
+(base) wless-user-172019181069:temp NhatLe$ rm iamcool.txt
+(base) wless-user-172019181069:temp NhatLe$ ls
+I Have Fun	i		newfile		something	test2.txt
+file		it		newplace	test.txt
+(base) wless-user-172019181069:temp NhatLe$ rm something newplace newfile
+rm: something: is a directory
+rm: newplace: is a directory
+rm: newfile: is a directory
+(base) wless-user-172019181069:temp NhatLe$ rm test.txt
+(base) wless-user-172019181069:temp NhatLe$ rm test2.txt
+(base) wless-user-172019181069:temp NhatLe$ rm something/awesome.txt
+(base) wless-user-172019181069:temp NhatLe$ rmdir something
+(base) wless-user-172019181069:temp NhatLe$ rm -rf newplace
+(base) wless-user-172019181069:temp NhatLe$ rm -rf file i "I Have Fun" it newfile
+
+Exiting Your Terminal (exit)
+
+(base) wless-user-172019181069:temp NhatLe$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
