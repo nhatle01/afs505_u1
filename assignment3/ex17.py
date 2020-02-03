@@ -23,3 +23,5 @@ print("Alright, all done.")
 
 out_file.close()
 in_file.close()
+
+#open(argv[2],'w').write(in_file.read(open(argv[1]))
