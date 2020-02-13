@@ -44,119 +44,56 @@ for i in range(n):
             b[row[index]][col[index]] = 'x' # print 'x' on the grid
             index = index - 1 # row[index] and col[index] start with elements 0 while index counts the total elements in the list.
 
-while neightbor_index >= 0: # for each elements in indexes
-    x = row[neightbor_index]
-    y = col[neightbor_index]
-    center = a[x][y]
-    #print("{},{}".format(x, y))
-    top_x = row[neightbor_index] - 1
-    top_y = col[neightbor_index]
-
-    top_left_x = top_x
-    top_left_y = top_y - 1
-
-    top_right_x = top_x
-    top_right_y = top_y + 1
-
-    left_x = row[neightbor_index]
-    left_y = col[neightbor_index] - 1
-
-    right_x = row[neightbor_index]
-    right_y = col[neightbor_index] + 1
-
-    bottom_x = row[neightbor_index] + 1
-    bottom_y = col[neightbor_index]
-
-    bottom_left_x = bottom_x
-    bottom_left_y = bottom_y -1
-
-    bottom_right_x = bottom_x
-    bottom_right_y = bottom_y + 1
-
-    center = a[x][y]
-    top = a[top_x][top_y]
-    top_left = a[top_left_x][top_left_y]
-    top_right = a[top_right_x][top_right_y]
-    left = a[left_x][left_y]
-    right = a[right_x][right_y]
-    bottom = a[bottom_x][bottom_y]
-    bottom_left = a[bottom_left_x][bottom_left_y]
-    bottom_right = a[bottom_right_x][bottom_right_y]
-    neighbor_list = [top, top_left, top_right, left, right, bottom, bottom_left, bottom_right]
-
-    dead = 0
-    alive = 0
-
-    for n in neighbor_list:
-        if n == '-':
-            dead = dead + 1
-        else:
-            alive = alive + 1
-
-    if center == 'x':   # living cell
-        if alive < 2 or alive > 3:
-            b[x][y] = '-'  # turn off
-    else:               # dead cell
-        if alive == 3:
-            b[x][y] = 'x'  # turn on
-
-
-    neightbor_index = neightbor_index - 1
-
+# index out of range > 80 or > 30
 n = 30
 m = 80
 for i in range(n):
     for j in range(m):
         if i > 2 and j > 2:
-            if a[i][j] == '-':
-                x = i
-                y = j
-                center = a[x][y]
-                #print("{},{}".format(x, y))
-                top_x = i - 1
-                top_y = j
+            x = i
+            y = j
+            #print("{},{}".format(x, y))
+            top_x = i - 1
+            top_y = j
+            top_left_x = top_x
+            top_left_y = top_y - 1
+            top_right_x = top_x
+            top_right_y = top_y + 1
+            left_x = i
+            left_y = j - 1
+            right_x = i
+            right_y = j + 1
+            bottom_x = i + 1
+            bottom_y = j
+            bottom_left_x = bottom_x
+            bottom_left_y = bottom_y -1
+            bottom_right_x = bottom_x
+            bottom_right_y = bottom_y + 1
 
-                top_left_x = top_x
-                top_left_y = top_y - 1
+            center = a[x][y]
+            top = a[top_x][top_y]
+            top_left = a[top_left_x][top_left_y]
+            top_right = a[top_right_x][top_right_y]
+            left = a[left_x][left_y]
+            right = a[right_x][right_y]
+            bottom = a[bottom_x][bottom_y]
+            bottom_left = a[bottom_left_x][bottom_left_y]
+            bottom_right = a[bottom_right_x][bottom_right_y]
+            neighbor_list = [top, top_left, top_right, left, right, bottom, bottom_left, bottom_right]
 
-                top_right_x = top_x
-                top_right_y = top_y + 1
+            dead = 0
+            alive = 0
 
-                left_x = i
-                left_y = j - 1
+            for n in neighbor_list:
+                if n == '-':
+                    dead = dead + 1
+                else:
+                    alive = alive + 1
 
-                right_x = i
-                right_y = j + 1
-
-                bottom_x = i + 1
-                bottom_y = j
-
-                bottom_left_x = bottom_x
-                bottom_left_y = bottom_y -1
-
-                bottom_right_x = bottom_x
-                bottom_right_y = bottom_y + 1
-
-                center = a[x][y]
-                top = a[top_x][top_y]
-                top_left = a[top_left_x][top_left_y]
-                top_right = a[top_right_x][top_right_y]
-                left = a[left_x][left_y]
-                right = a[right_x][right_y]
-                bottom = a[bottom_x][bottom_y]
-                bottom_left = a[bottom_left_x][bottom_left_y]
-                bottom_right = a[bottom_right_x][bottom_right_y]
-                neighbor_list = [top, top_left, top_right, left, right, bottom, bottom_left, bottom_right]
-
-                dead = 0
-                alive = 0
-
-                for n in neighbor_list:
-                    if n == '-' or '':
-                        dead = dead + 1
-                    else:
-                        alive = alive + 1
-               # dead cell
+            if center == 'x':   # living cell
+                if alive < 2 or alive > 3:
+                    b[x][y] = '-'  # turn off
+            else:               # dead cell
                 if alive == 3:
                     b[x][y] = 'x'  # turn on
 
